@@ -1,11 +1,13 @@
 import React from 'react';
 import DecorativeImg from '../assets/decorative.png';
+import ArrowArt from '../assets/ArrowArt.png';
+import FamilyIcon from '../assets/familyImg.png';
 const HeroSection = () => {
   return (
     <div className="bg-black min-h-screen px-6 pt-24">
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center md:items-start">
         {/* Left Content */}
-        <div className="w-full md:w-1/2 space-y-6 relative">
+        <div className="w-full ml-20 md:w-1/2 space-y-6 relative">
           {/* Title with specific styling for each line */}
           <div className="space-y-1">
             <h1 className="text-white font-['Poppins'] text-6xl font-bold">
@@ -17,7 +19,7 @@ const HeroSection = () => {
             <img
               src={DecorativeImg}
               alt="Decorative"
-              className="absolute top-12 right-80  transform -translate-y-1/2 w-[140px] h-[140px] "
+              className="absolute top-12 right-[45%]  transform -translate-y-1/2 w-[140px] h-[140px] "
             />
             <h1 className="text-[#22C55E] font-['Poppins'] text-6xl font-bold">
               Deservings
@@ -28,8 +30,9 @@ const HeroSection = () => {
 
           {/* Description */}
           <p className="text-gray-300 font-['Poppins'] text-lg leading-relaxed max-w-xl">
-            We are responding with emergency assistance where needed and
-            supporting families who have lost their homes due to conflict.
+            We are dedicated to supporting truly deserving families in villages
+            by providing them with essential rations and financial assistance,
+            ensuring they never struggle alone.
           </p>
 
           {/* Donate Button */}
@@ -37,10 +40,15 @@ const HeroSection = () => {
             Donate
           </button>
         </div>
-
         {/* Right side placeholder - we'll add the image later */}
-        <div className="w-full md:w-1/2">
-          {/* Image content will go here */}
+        {/* Right Content */}
+        <div className="w-full md:w-1/2 flex md:mt-0">
+          {/* Map Image */}
+          <img
+            src={FamilyIcon} // Use the map image
+            alt="Afghanistan Map"
+            className="w-full max-w-md"
+          />
         </div>
       </div>
     </div>
