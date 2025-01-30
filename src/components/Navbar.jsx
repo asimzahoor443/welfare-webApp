@@ -4,7 +4,7 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="bg-black px-6 py-4 font-['Poppins']">
+    <nav className="bg-black px-6 py-5 font-['Poppins']">
       <div className="max-w-7xl mx-auto">
         {/* Desktop Menu */}
         <div className="flex items-center justify-between">
