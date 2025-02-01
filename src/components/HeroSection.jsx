@@ -5,7 +5,7 @@ import DecorativeImg from '../assets/decorative.png';
 import FamilyIcon from '../assets/familyImg.png';
 const HeroSection = () => {
   return (
-    <div className="bg-black min-h-screen px-6 pt-24 overflow-hidden">
+    <div className="bg-black min-h-screen px-6 pt-32 overflow-hidden">
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center md:items-start">
         {/* Left Content */}
         <motion.div
