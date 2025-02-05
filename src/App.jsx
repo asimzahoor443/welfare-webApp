@@ -1,3 +1,4 @@
+import FoundationWorkCarousel from './components/FoundationWorkCarousel';
 import HeroSection from './components/HeroSection';
 import Navbar from './components/Navbar';
 import WhoWeAre from './components/WhoWeAre';
@@ -8,6 +9,7 @@ function App() {
       <Navbar />
       <HeroSection />
       <WhoWeAre />
+      <FoundationWorkCarousel />
       {/* Rest of your content */}
     </div>
   );
