@@ -1,6 +1,5 @@
 'use client';
-import React from 'react'; // <-- Fixes all "React refers to a UMD global" errors
-
+import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination } from 'swiper/modules';
 import 'swiper/css';
@@ -34,14 +33,14 @@ const WelfareCarousel = () => {
     {
       id: 4,
       title: 'Medicine',
-      image: '/images/education.png',
+      image: '/src/assets/Medicine.jpg',
       description:
         'Building schools and offering scholarships for underprivileged children.',
     },
     {
       id: 5,
       title: '  Donar Request',
-      image: '/images/education.png',
+      image: '/src/assets/DonarRequests.jpg',
       description:
         'Building schools and offering scholarships for underprivileged children.',
     },
@@ -63,7 +62,7 @@ const WelfareCarousel = () => {
     {
       id: 8,
       title: 'Dream Project',
-      image: '/images/quran.png',
+      image: '/src/assets/DreamProject.jpg',
       description:
         'Distributing free copies of the Quran and organizing religious education.',
     },
