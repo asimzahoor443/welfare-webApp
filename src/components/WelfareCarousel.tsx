@@ -1,9 +1,8 @@
 'use client';
 import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation, Pagination } from 'swiper/modules';
+import { Autoplay, Pagination } from 'swiper/modules';
 import 'swiper/css';
-import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 
 const WelfareCarousel = () => {
@@ -12,7 +11,7 @@ const WelfareCarousel = () => {
     {
       id: 1,
       title: 'Electricity & Water Supply',
-      image: '/images/electricity-water.png', // Replace with your PNG path
+      image: '/src/assets/Logo.jpeg', // Replace with your PNG path
       description:
         'Providing uninterrupted electricity and clean water to underserved communities.',
     },
@@ -47,14 +46,14 @@ const WelfareCarousel = () => {
     {
       id: 6,
       title: 'Financial Assistance',
-      image: '/images/education.png',
+      image: '/src/assets/Financial Assistance.jpg',
       description:
         'Building schools and offering scholarships for underprivileged children.',
     },
     {
       id: 7,
       title: 'Water',
-      image: '/images/education.png',
+      image: '/src/assets/Water.jpg',
       description:
         'Building schools and offering scholarships for underprivileged children.',
     },
@@ -71,8 +70,11 @@ const WelfareCarousel = () => {
   return (
     <div className="py-12 px-8 bg-black">
       <Swiper
-        modules={[Navigation, Pagination]}
-        navigation
+        modules={[Autoplay, Pagination]}
+        autoplay={{
+          delay: 3000,
+          disableOnInteraction: false,
+        }}
         pagination={{ clickable: true }}
         loop={true}
         breakpoints={{
@@ -85,7 +87,7 @@ const WelfareCarousel = () => {
       >
         {foundationActivities.map((activity) => (
           <SwiperSlide key={activity.id}>
-            <div className="h-full bg-white rounded-xl shadow-lg p-6 mx-2 hover:shadow-xl transition-all cursor-pointer flex flex-col">
+            <div className="h-full bg-[#E2E2B6] rounded-xl shadow-lg p-6 mx-2 hover:shadow-xl transition-all cursor-pointer flex flex-col">
               {/* Title */}
               <div className="flex-1 mb-4 flex items-center justify-center">
                 <h3 className="text-xl font-bold mb-4 text-gray-800">
