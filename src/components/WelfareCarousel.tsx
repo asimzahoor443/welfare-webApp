@@ -59,7 +59,7 @@ const WelfareCarousel = () => {
   ];
 
   return (
-    <div className="py-12 px-8 bg-black">
+    <div id="how-we-help" className="py-12 px-8 bg-black">
       <style jsx global>{`
         @media (min-width: 1024px) {
           .swiper-slide {

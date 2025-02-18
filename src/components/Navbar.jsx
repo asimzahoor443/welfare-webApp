@@ -20,19 +20,19 @@ const Navbar = () => {
             <div className="hidden md:flex space-x-8">
               <a
                 href="#who-we-are"
-                className="text-green-400 hover:text-green-300 transition-colors font-semibold"
+                className="text-[#B9B28A] hover:text-green-500 transition-colors font-semibold"
               >
                 Who we are
               </a>
               <a
-                href="/how-we-help"
-                className="text-green-400 hover:text-green-300 transition-colors font-semibold"
+                href="#how-we-help"
+                className="text-[#B9B28A] hover:text-green-500 transition-colors font-semibold"
               >
                 How we help
               </a>
               <a
                 href="/news"
-                className="text-green-400 hover:text-green-300 transition-colors font-semibold"
+                className="text-[#B9B28A] hover:text-green-500 transition-colors font-semibold"
               >
                 News & stories
               </a>
