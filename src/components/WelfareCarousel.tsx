@@ -60,7 +60,7 @@ const WelfareCarousel = () => {
 
   return (
     <div id="how-we-help" className="py-12 px-8 bg-black">
-      <style jsx global>{`
+      <style>{`
         @media (min-width: 1024px) {
           .swiper-slide {
             transition: all 0.5s ease !important;
@@ -92,7 +92,7 @@ const WelfareCarousel = () => {
         centeredSlides={true}
         breakpoints={{
           640: { slidesPerView: 1 },
-          768: { slidesPerView: 2 },
+          768: { slidesPerView: 2, spaceBetween: 30 },
           1024: { slidesPerView: 3, spaceBetween: 40 },
         }}
         className="h-[400px]" // Adjust height as needed
@@ -122,7 +122,7 @@ const WelfareCarousel = () => {
 
               {/* Description */}
               <div className="flex-1 flex items-center justify-center">
-                <p className="text-[#0C0C0C] text-center text-sm leading-relaxed px-2">
+                <p className="text-[#222831] text-center font-medium leading-relaxed px-2 font-[Poppins]">
                   {activity.description}
                 </p>
               </div>

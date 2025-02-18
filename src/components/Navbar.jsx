@@ -74,13 +74,13 @@ const Navbar = () => {
           <div className={`${isOpen ? 'block' : 'hidden'} md:hidden mt-4`}>
             <div className="flex flex-col space-y-4">
               <a
-                href="/who-we-are"
+                href="#who-we-are"
                 className="text-green-400 hover:text-green-300 transition-colors font-semibold"
               >
                 Who we are
               </a>
               <a
-                href="/how-we-help"
+                href="#how-we-help"
                 className="text-green-400 hover:text-green-300 transition-colors font-semibold"
               >
                 How we help
