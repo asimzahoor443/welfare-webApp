@@ -10,13 +10,3 @@ body {
 .swiper-button-prev {
   color: #3b82f6 !important; /* Tailwind blue-500 */
 }
-
-.swiper-pagination-bullet-active {
-  background: #3b82f6 !important;
-}
-
-.swiper-button-next::after,
-.swiper-button-prev::after {
-  font-size: 2rem;
-  font-weight: bold;
-}

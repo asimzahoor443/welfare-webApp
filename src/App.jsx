@@ -18,6 +18,12 @@ const foundationImages = [
     description: 'Built 10 classrooms in rural area',
     orientation: 'portrait',
   },
+  {
+    src: '/src/assets/FoundationalGallery/Impact.png',
+    alt: '2022 School Construction',
+    description: 'Built 10 classrooms in rural area',
+    orientation: 'portrait',
+  },
   // Add more images...
 ];
 
