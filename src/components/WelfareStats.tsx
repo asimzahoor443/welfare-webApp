@@ -51,7 +51,7 @@ const WelfareStats = () => {
                   key={`donors-${key}`}
                   end={300}
                   duration={5}
-                  className="text-3xl sm:text-4xl font-bold"
+                  className="text-3xl text-[#22C55E] sm:text-4xl font-bold"
                 />
               )}
               <span className="text-3xl sm:text-4xl font-bold text-yellow-400 ml-1">
@@ -71,7 +71,7 @@ const WelfareStats = () => {
                   key={`amount-${key}`}
                   end={1500000}
                   duration={5}
-                  className="text-3xl sm:text-4xl font-bold"
+                  className="text-3xl  text-[#22C55E] sm:text-4xl font-bold"
                 />
               )}
               <span className="text-3xl sm:text-4xl font-bold text-yellow-400 ml-1">
@@ -91,7 +91,7 @@ const WelfareStats = () => {
                   key={`families-${key}`}
                   end={20}
                   duration={5}
-                  className="text-3xl sm:text-4xl font-bold"
+                  className="text-3xl text-[#22C55E] sm:text-4xl font-bold"
                 />
               )}
               <span className="text-3xl sm:text-4xl font-bold text-yellow-400 ml-1">

@@ -35,7 +35,8 @@ function App() {
       <WhoWeAre />
       <WelfareCarousel />
       <WelfareStats />
-      <FoundationGallery images={foundationImages} />
+      <FoundationGallery />
+
       {/* Rest of your content */}
     </div>
   );

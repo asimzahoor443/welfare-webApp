@@ -1,71 +1,98 @@
 import React from 'react';
-import { useState } from 'react';
-import { FiChevronLeft, FiChevronRight } from 'react-icons/fi';
+import { useRef } from 'react';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Navigation } from 'swiper/modules';
+import 'swiper/css';
+import 'swiper/css/navigation';
 
-const FoundationGallery = ({ images }) => {
-  const [currentSlide, setCurrentSlide] = useState(0);
-  const visibleItems = 3;
+// Import images
+const galleryImages = [
+  '/src/assets/FoundationalGallery/5Families.jpeg',
+  '/src/assets/FoundationalGallery/5FamiliesPackage.jpeg',
+  '/src/assets/FoundationalGallery/RationBox.jpeg',
+  '/src/assets/FoundationalGallery/MasajidCaps.jpeg',
+  '/src/assets/FoundationalGallery/MasajidCaps2.jpeg',
+  '/src/assets/FoundationalGallery/WaterCampaign.jpeg',
+  '/src/assets/FoundationalGallery/WaterCooler.jpeg',
+  '/src/assets/FoundationalGallery/QuranPak.jpeg',
+  '/src/assets/FoundationalGallery/Ramadan2023.jpeg',
+  '/src/assets/FoundationalGallery/Ramadan2024.jpeg',
+  '/src/assets/FoundationalGallery/1Familypackage.jpeg',
+  '/src/assets/FoundationalGallery/Impact.png',
+  '/src/assets/FoundationalGallery/4FamiliesRationPackage.jpeg',
+];
 
-  const nextSlide = () => {
-    setCurrentSlide((prev) => (prev + 1) % (images.length - visibleItems + 1));
-  };
-
-  const prevSlide = () => {
-    setCurrentSlide(
-      (prev) =>
-        (prev - 1 + (images.length - visibleItems + 1)) %
-        (images.length - visibleItems + 1)
-    );
-  };
+const FoundationGallery = () => {
+  const swiperRef = useRef<any>(null);
 
   return (
-    <div className="relative bg-white p-8">
-      <div className="overflow-hidden">
-        <div
-          className="flex transition-transform duration-300"
-          style={{
-            transform: `translateX(-${currentSlide * (100 / visibleItems)}%)`,
-            width: `${(images.length / visibleItems) * 100}%`,
-          }}
+    <div className="container mx-auto my-10 px-4 overflow-hidden">
+      {/* Custom Navigation */}
+      <div className="flex justify-end gap-4 mb-4">
+        <button
+          onClick={() => swiperRef.current?.slidePrev()}
+          className="p-2 rounded-full bg-gray-100 hover:bg-gray-200 transition-colors"
         >
-          {images.map((image, index) => (
-            <div key={index} className="w-1/3 p-4 flex-shrink-0">
-              <div className="aspect-square bg-gray-100 rounded-lg overflow-hidden">
-                <img
-                  src={image.url}
-                  alt={image.alt}
-                  className="w-full h-full object-cover"
-                />
-              </div>
-              {/* Optional caption */}
-              {image.title && (
-                <div className="mt-2 text-center">
-                  <h3 className="font-medium">{image.title}</h3>
-                  {image.description && (
-                    <p className="text-sm text-gray-600">{image.description}</p>
-                  )}
-                </div>
-              )}
-            </div>
-          ))}
-        </div>
+          ←
+        </button>
+        <button
+          onClick={() => swiperRef.current?.slideNext()}
+          className="p-2 rounded-full bg-gray-100 hover:bg-gray-200 transition-colors"
+        >
+          →
+        </button>
       </div>
 
-      {/* Navigation Arrows */}
-      <button
-        onClick={prevSlide}
-        className="absolute left-0 top-1/2 -translate-y-1/2 p-2 rounded-full bg-white shadow-lg hover:bg-gray-100"
-        disabled={currentSlide === 0}
+      <Swiper
+        onSwiper={(swiper) => (swiperRef.current = swiper)}
+        modules={[Navigation]}
+        spaceBetween={20}
+        slidesPerView={1}
+        navigation={{
+          prevEl: '.custom-prev',
+          nextEl: '.custom-next',
+        }}
+        breakpoints={{
+          640: { slidesPerView: 1 },
+          768: { slidesPerView: 2 },
+          1024: { slidesPerView: 3 },
+        }}
+        className="!overflow-visible"
       >
-        <FiChevronLeft className="w-6 h-6" />
-      </button>
-      <button
-        onClick={nextSlide}
-        className="absolute right-0 top-1/2 -translate-y-1/2 p-2 rounded-full bg-white shadow-lg hover:bg-gray-100"
-        disabled={currentSlide === images.length - visibleItems}
-      >
-        <FiChevronRight className="w-6 h-6" />
-      </button>
+        {galleryImages.map((image, index) => (
+          <SwiperSlide key={index}>
+            <div className="group relative rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow">
+              <div className="aspect-square bg-gray-100">
+                <img
+                  src={image}
+                  alt={`Gallery ${index + 1}`}
+                  className="w-full h-full object-cover"
+                  onError={(e) => {
+                    (e.target as HTMLImageElement).src = '/fallback-image.jpg';
+                  }}
+                />
+              </div>
+            </div>
+          </SwiperSlide>
+        ))}
+      </Swiper>
+
+      <style jsx global>{`
+        .swiper-slide {
+          opacity: 1 !important;
+          transform: scale(0.95);
+          transition: transform 0.3s ease;
+        }
+
+        .swiper-slide-active {
+          transform: scale(1);
+        }
+
+        .swiper-button-disabled {
+          opacity: 0.3;
+          cursor: not-allowed;
+        }
+      `}</style>
     </div>
   );
 };
