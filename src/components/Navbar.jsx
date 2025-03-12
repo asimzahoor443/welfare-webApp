@@ -86,10 +86,10 @@ const Navbar = () => {
                 How we help
               </a>
               <a
-                href="/news"
+                href="#gallery"
                 className="text-green-400 hover:text-green-300 transition-colors font-semibold"
               >
-                News & stories
+                Gallery
               </a>
               <button className="bg-yellow-500 text-black px-6 py-2 rounded-full hover:bg-yellow-400 transition-colors font-semibold w-full">
                 Donate
