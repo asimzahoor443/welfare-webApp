@@ -2,7 +2,7 @@ import { MapPin, Phone, Mail } from 'lucide-react';
 
 const Footer = () => {
   return (
-    <footer className="bg-black text-white py-8 px-4 text-center">
+    <footer className="bg-[#222831] text-black py-8 px-4 text-center">
       {/* Logo & Name in One Line */}
       <div className="flex items-center justify-center gap-4 mb-4">
         <img
@@ -16,18 +16,20 @@ const Footer = () => {
       </div>
 
       {/* Contact Information */}
-      <div className="flex justify-center gap-6 text-gray-400 mt-12">
+      <div className="flex justify-center gap-6 mt-12">
         <div className="flex items-center gap-2">
           <MapPin className="text-[#22C55E]" size={18} />{' '}
-          <span className="text-white">Punjab, Pakistan</span>
+          <span className="text-[#B9B28A]">Punjab, Pakistan</span>
         </div>
         <div className="flex items-center gap-2">
           <Phone className="text-[#22C55E]" size={18} />{' '}
-          <span className="text-white">+923075579911</span>
+          <span className="text-[#B9B28A]" s>
+            +92-3075579911
+          </span>
         </div>
         <div className="flex items-center gap-2">
           <Mail className="text-[#22C55E]" size={18} />{' '}
-          <span className="text-white">your-email@example.com</span>
+          <span className="text-[#B9B28A]">your-email@example.com</span>
         </div>
       </div>
 

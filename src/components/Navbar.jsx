@@ -5,7 +5,7 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className="bg-black px-6 py-5 font-['Poppins'] top-0 fixed w-full z-50">
+      <nav className="bg-[#222831] px-6 py-5 font-['Poppins'] top-0 fixed w-full z-50">
         <div className="max-w-7xl mx-auto">
           {/* Desktop Menu */}
           <div className="flex text-yellow-500 items-center justify-between">
