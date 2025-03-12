@@ -4,7 +4,7 @@ const WhoWeAre = () => {
   return (
     <div
       id="who-we-are"
-      className="bg-black w-full py-16 pt-24 overflow-hidden"
+      className="bg-[#222831] w-full py-16 pt-24 overflow-hidden"
     >
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center h-full">
         {/* Left Side - Golden Rectangle with "About Us" */}

@@ -10,8 +10,8 @@ const HeroSection = () => {
         {/* Left Content */}
         <motion.div
           className="w-full ml-20 md:w-1/2 space-y-6 relative"
-          initial={{ opacity: 0, x: -50 }}
-          whileInView={{ x: 0, opacity: 1 }}
+          initial={{ opacity: 0, y: -50 }}
+          whileInView={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.7 }}
           viewport={{ once: false, amount: 0.5 }}
         >
@@ -52,7 +52,7 @@ const HeroSection = () => {
         <motion.div
           className="w-full md:w-1/2 flex justify-center mt-8 md:mt-0"
           initial={{ opacity: 0, x: -50 }}
-          whileInView={{ scale: 1, opacity: 1 }}
+          whileInView={{ x: 0, opacity: 1 }}
           transition={{ duration: 0.9, delay: 0.3 }}
           viewport={{ once: false, amount: 0.5 }}
         >

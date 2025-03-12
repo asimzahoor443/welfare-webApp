@@ -31,10 +31,10 @@ const Navbar = () => {
                 How we help
               </a>
               <a
-                href="/news"
+                href="#gallery"
                 className="text-[#B9B28A] hover:text-green-500 transition-colors font-semibold"
               >
-                News & stories
+                Gallery
               </a>
             </div>
 

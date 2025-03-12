@@ -14,7 +14,10 @@ const galleryImages = [
 
 const FoundationGallery = () => {
   return (
-    <div className="container mx-auto my-10 bg-black px-4 relative">
+    <div
+      id="gallery"
+      className="container mx-auto my-10 bg-black px-4 relative"
+    >
       {/* Header */}
       <h2 className="text-4xl font-bold text-[#22C55E] text-center mb-8 font-poppins">
         Foundation Gallery
