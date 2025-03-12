@@ -8,10 +8,10 @@ const Navbar = () => {
       <nav className="bg-black px-6 py-5 font-['Poppins'] top-0 fixed w-full z-50">
         <div className="max-w-7xl mx-auto">
           {/* Desktop Menu */}
-          <div className="flex items-center justify-between">
+          <div className="flex text-yellow-500 items-center justify-between">
             {/* Logo */}
             <div className="flex items-center">
-              <a href="/" className="text-2xl font-bold text-yellow-500">
+              <a href="/" className="text-2xl font-bold ">
                 AwamUnNass
               </a>
             </div>

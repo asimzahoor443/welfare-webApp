@@ -1,4 +1,5 @@
 import FinancialYearReport from './components/FinancialYear';
+import Footer from './components/Footer';
 import FoundationGallery from './components/FoundationGallery';
 import HeroSection from './components/HeroSection';
 import Navbar from './components/Navbar';
@@ -38,6 +39,7 @@ function App() {
       <WelfareStats />
       <FoundationGallery />
       <FinancialYearReport />
+      <Footer />
     </div>
   );
 }
