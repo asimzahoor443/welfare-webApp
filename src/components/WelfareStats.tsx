@@ -69,7 +69,7 @@ const WelfareStats = () => {
               {isVisible && (
                 <CountUp
                   key={`amount-${key}`}
-                  end={1500000}
+                  end={1650000}
                   duration={5}
                   className="text-3xl  text-[#22C55E] sm:text-4xl font-bold"
                 />

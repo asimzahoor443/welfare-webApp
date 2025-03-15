@@ -10,6 +10,7 @@ const galleryImages = [
   '/src/assets/FoundationalGallery/5FamiliesPackage.jpeg',
   '/src/assets/FoundationalGallery/Ramadan2024.jpeg',
   '/src/assets/FoundationalGallery/4FamiliesRationPackage.jpeg',
+  '/src/assets/FoundationalGallery/RationBox.jpeg',
 ];
 
 const FoundationGallery = () => {
