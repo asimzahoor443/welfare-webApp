@@ -100,9 +100,7 @@ const Navbar = () => {
       </nav>
       <div
         className={`${isOpen ? 'mt-48' : 'mt-0'} transition-all duration-300`}
-      >
-        {/* Your content goes here */}
-      </div>
+      ></div>
     </>
   );
 };

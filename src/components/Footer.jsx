@@ -13,7 +13,7 @@ const Footer = () => {
         className="flex flex-col md:flex-row items-center justify-center gap-4 mb-4"
       >
         <img
-          src="/src/assets/Logo.jpeg"
+          src="/public/Logo.jpeg"
           alt="Foundation Logo"
           className="w-24 h-24 rounded-full"
         />
@@ -25,11 +25,11 @@ const Footer = () => {
       {/* Contact Information */}
       <div className="flex flex-col md:flex-row justify-center items-center gap-6 md:gap-12 mt-8 md:mt-12">
         <div className="flex items-center gap-2">
-          <MapPin className="text-[#22C55E]" size={18} />
-          <span className="text-[#B9B28A]">Punjab, Pakistan</span>
+          <MapPin className="text-[#22C55E]" size={20} />
+          <span className="text-[#B9B28A]">Khushab, Punjab, Pakistan</span>
         </div>
         <div className="flex items-center gap-2">
-          <Phone className="text-[#22C55E]" size={18} />
+          <Phone className="text-[#22C55E]" size={20} />
           <span className="text-[#B9B28A]">+92-3075579911</span>
         </div>
       </div>
