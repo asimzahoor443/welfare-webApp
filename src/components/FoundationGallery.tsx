@@ -6,11 +6,11 @@ import 'swiper/css/navigation';
 import { FiChevronLeft, FiChevronRight } from 'react-icons/fi';
 
 const galleryImages = [
-  '/public/FoundationalGallery/5Families.jpeg',
-  '/public/FoundationalGallery/5FamiliesPackage.jpeg',
-  '/public/FoundationalGallery/Ramadan2024.jpeg',
-  '/public/FoundationalGallery/4FamiliesRationPackage.jpeg',
-  '/public/FoundationalGallery/RationBox.jpeg',
+  '/FoundationalGallery/5Families.jpeg',
+  '/FoundationalGallery/5FamiliesPackage.jpeg',
+  '/FoundationalGallery/Ramadan2024.jpeg',
+  '/FoundationalGallery/4FamiliesRationPackage.jpeg',
+  '/FoundationalGallery/RationBox.jpeg',
 ];
 
 const FoundationGallery = () => {

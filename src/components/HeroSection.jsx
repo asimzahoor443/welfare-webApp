@@ -1,8 +1,8 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import DecorativeImg from '/public/decorative.png';
+import DecorativeImg from '/decorative.png';
 // import ArrowArt from '../assets/ArrowArt.png';
-import FamilyIcon from '/public/familyImg.png';
+import FamilyIcon from '/familyImg.png';
 const HeroSection = () => {
   return (
     <div className="bg-black min-h-screen px-6 pt-32 overflow-hidden">

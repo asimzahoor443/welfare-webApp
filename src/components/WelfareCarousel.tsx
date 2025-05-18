@@ -10,50 +10,50 @@ const WelfareCarousel = () => {
     {
       id: 1,
       title: 'Electricity & Water Supply',
-      image: '/public/Logo.jpeg', // Replace with your PNG path
+      image: '/Logo.jpeg', // Replace with your PNG path
       description: 'Covering bills for deserving families.',
     },
     {
       id: 2,
       title: 'Education',
-      image: '/public/Education.jpg',
+      image: '/Education.jpg',
       description: 'Helping students with financial aid.',
     },
     {
       id: 3,
       title: 'Rashan',
-      image: '/public/Rashan.jpg',
+      image: '/Rashan.jpg',
       description: 'Monthly food support + Eid distributions.',
     },
     {
       id: 4,
       title: 'Medicine',
-      image: '/public/Medicine.jpg',
+      image: '/Medicine.jpg',
       description: 'Financial help for medicines & treatments.',
     },
     {
       id: 5,
       title: '  Donar Request',
-      image: '/public/DonarRequests.jpg',
+      image: '/DonarRequests.jpg',
       description: 'Supporting cases based on donor appeals.',
     },
     {
       id: 6,
       title: 'Financial Assistance',
-      image: '/public/Financial Assistance.jpg',
+      image: '/Financial Assistance.jpg',
       description: 'Helping families with urgent needs.',
     },
     {
       id: 7,
       title: 'Water',
-      image: '/public/Water.jpg',
+      image: '/Water.jpg',
       description: 'Installing water coolers in schools & madaris.',
     },
     // Add all 8 items here...
     {
       id: 8,
       title: 'Dream Project',
-      image: '/public/DreamProject.jpg',
+      image: '/DreamProject.jpg',
       description: 'Building a school with quality education.',
     },
   ];

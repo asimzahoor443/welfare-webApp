@@ -3,12 +3,12 @@ import React, { useState } from 'react';
 const FinancialYearReport = () => {
   const reports = {
     '2023': {
-      cover: '/public/Reports/fiscalyear2023.png',
-      pdf: '/public/Reports/FinancialYear 2023.pdf',
+      cover: '/Reports/fiscalyear2023.png',
+      pdf: '/Reports/FinancialYear 2023.pdf',
     },
     '2024': {
-      cover: '/public/Reports/fiscalyear2024.png',
-      pdf: '/public/Reports/FinancialYear 2024.pdf',
+      cover: '/Reports/fiscalyear2024.png',
+      pdf: '/Reports/FinancialYear 2024.pdf',
     },
   };
 
