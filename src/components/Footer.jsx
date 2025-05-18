@@ -13,7 +13,7 @@ const Footer = () => {
         className="flex flex-col md:flex-row items-center justify-center gap-4 mb-4"
       >
         <img
-          src="/public/Logo.jpeg"
+          src="/Logo.jpeg"
           alt="Foundation Logo"
           className="w-24 h-24 rounded-full"
         />
